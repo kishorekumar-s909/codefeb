@@ -1,10 +1,9 @@
-function findage(x=2000,callback){
-    let y=2026-x;
-    return y;
-    
-
-
+function findage(x,y){
+    let z =y-x;
+    return z;
 }
+findage(2000,2026)
+
  function findage1(){
    // let g=findage();
     if(findage()>18){
