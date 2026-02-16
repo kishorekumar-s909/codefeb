@@ -1,13 +1,19 @@
-function findage(x=2000,y=2026){
-    // callback()
-    let z =y-x;
-    return z;
-   
-    }
-let first=findage()
+function calculateage(x,y,op){
+    op(x,y);
 
-function findage1(){
-      if(first > 18){
+    
+   
+   
+     
+    }
+//let age = calculateage()
+
+function findage1(x,y){
+    let z=y-x;
+    
+    
+    
+      if(z >= 18){
         console.log( " eligible for voting");
         
     }
@@ -15,8 +21,4 @@ function findage1(){
         console.log(" not eligible for voting");
     }
 }
-        
-    
-
-
-findage1()
+calculateage(2000,2026,findage1)
